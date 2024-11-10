@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação do Trabalho - DALL-E 3</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #003366, #1E90FF, #000080);
+            color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        h1, h2, h3 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.8em;
+            line-height: 1.6;
+            max-width: 800px;
+            padding: 20px;
+            margin: 20px auto;
+        }
+        .content {
+            display: none;
+            padding-top: 80px;
+        }
+        .active {
+            display: block;
+        }
+        .nav-button {
+            font-size: 1.5em;
+            margin: 20px;
+            padding: 15px 30px;
+            background-color: #005bb5;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .nav-button:hover {
+            background-color: #4682B4;
+        }
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        iframe {
+            width: 90%;
+            height: 600px;
+            margin: 20px auto;
+        }
+        .summary-list {
+            text-align: left;
+            margin: 0 auto;
+            width: fit-content;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page1" class="content active">
+        <div class="container">
+            <h1>IFPA - Instituto Federal de Educação, Ciência e Tecnologia do Pará - Campus Castanhal</h1>
+            <h2>Apresentação dos Discentes</h2>
+            <p>Carlos Mario, Herlana, Eurípedes, Renata, Leon</p>
+            <h3>Matéria: Algoritmos e Lógica de Programação</h3>
+            <button class="nav-button" onclick="nextPage()">Próximo</button>
+        </div>
+    </div>
+
+    <div id="page2" class="content">
+        <div class="container">
+            <h2>Sumário</h2>
+            <div class="summary-list">
+                <p>1. Introdução ao DALL-E 3</p>
+                <p>2. Funcionamento do DALL-E 3</p>
+                <p>3. Características</p>
+                <p>4. Redes Neurais Convolucionais</p>
+                <p>5. Processamento de Linguagem Natural</p>
+                <p>6. Vídeo Explicativo</p>
+                <p>7. Agradecimentos</p>
+            </div>
+            <button class="nav-button" onclick="previousPage()">Voltar</button>
+            <button class="nav-button" onclick="nextPage()">Próximo</button>
+        </div>
+    </div>
+
+    <!-- Conteúdo das páginas adicionais -->
+    <div id="page3" class="content">
+        <div class="container">
+            <h2>Introdução ao DALL-E 3</h2>
+            <p>O DALL-E 3 é um modelo avançado de geração de imagens a partir de descrições textuais, desenvolvido para criar imagens altamente detalhadas e realistas.</p>
+            <button class="nav-button" onclick="previousPage()">Voltar</button>
+            <button class="nav-button" onclick="nextPage()">Próximo</button>
+        </div>
+    </div>
+
+    <div id="page4" class="content">
+        <div class="container">
+            <h2>Funcionamento do DALL-E 3</h2>
+            <p>O funcionamento do DALL-E 3 envolve redes neurais profundas que aprendem padrões de imagens e textos para gerar ilustrações precisas a partir de descrições textuais.</p>
+            <button class="nav-button" onclick="previousPage()">Voltar</button>
+            <button class="nav-button" onclick="nextPage()">Próximo</button>
+        </div>
+    </div>
+
+    <div id="page5" class="content">
+        <div class="container">
+            <h2>Características do DALL-E 3</h2>
+            <p>As principais características do DALL-E 3 incluem a geração de imagens detalhadas, capacidade de entender contexto e maior flexibilidade em interpretar descrições complexas.</p>
+            <button class="nav-button" onclick="previousPage()">Voltar</button>
+            <button class="nav-button" onclick="nextPage()">Próximo</button>
+        </div>
+    </div>
+
+    <div id="page6" class="content">
+        <div class="container">
+            <h2>Redes Neurais Convolucionais</h2>
+            <p>As Redes Neurais Convolucionais são um tipo de rede neural que processa dados em forma de grade, especialmente eficaz em análise de imagens, sendo fundamentais no DALL-E 3.</p>
+            <button class="nav-button" onclick="previousPage()">Voltar</button>
+            <button class="nav-button" onclick="nextPage()">Próximo</button>
+        </div>
+    </div>
+
+    <div id="page7" class="content">
+        <div class="container">
+            <h2>Processamento de Linguagem Natural</h2>
+            <p>O Processamento de Linguagem Natural permite que o DALL-E 3 compreenda descrições textuais complexas e as traduza em imagens visuais, aprimorando a precisão dos resultados.</p>
+            <button class="nav-button" onclick="previousPage()">Voltar</button>
+            <button class="nav-button" onclick="nextPage()">Próximo</button>
+        </div>
+    </div>
+
+    <div id="page8" class="content">
+        <div class="container">
+            <h2>Vídeo Explicativo</h2>
+            <iframe src="https://www.youtube.com/embed/BPnAy90Aa3A" title="Vídeo Explicativo sobre DALL-E 3"></iframe>
+            <button class="nav-button" onclick="previousPage()">Voltar</button>
+            <button class="nav-button" onclick="nextPage()">Próximo</button>
+        </div>
+    </div>
+
+    <div id="page9" class="content">
+        <div class="container">
+            <h2>Experimente o DALL-E 3!</h2>
+            <p>Acesse o DALL-E 3 no site da Microsoft para criar imagens a partir de descrições textuais e ter uma experiência prática.</p>
+            <p><a href="https://www.bing.com/images/create?FORM=GENILP" target="_blank" style="color: #1E90FF; font-size: 1.8em; text-decoration: underline;">Experimente o DALL-E 3 aqui!</a></p>
+            <button class="nav-button" onclick="previousPage()">Voltar</button>
+            <button class="nav-button" onclick="nextPage()">Próximo</button>
+        </div>
+    </div>
+
+    <div id="page10" class="content">
+        <div class="container">
+            <h2>Agradecimentos</h2>
+            <p>Agradecemos a todos que contribuíram para a realização deste trabalho, incluindo os professores, colegas e familiares, que nos deram apoio ao longo do processo.</p>
+            <button class="nav-button" onclick="previousPage()">Voltar</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 10;
+
+        function showPage(pageNumber) {
+            document.querySelectorAll('.content').forEach(page => page.classList.remove('active'));
+            document.getElementById('page' + pageNumber).classList.add('active');
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+
+        function previousPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            showPage(currentPage);
+        });
+    </script>
+</body>
+</html>
